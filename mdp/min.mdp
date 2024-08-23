@@ -1,0 +1,20 @@
+; April 11, 2024
+; Esteban Cea Klapp
+
+integrator               = steep  ; steepest descent energy minimization
+nsteps                   = 50000  ; maximum number of steps (may end sooner)
+
+nstenergy                = 1000    ; frequency (n_steps) to output energies to .edr file
+nstlog                   = 1000    ; frequency (n_steps) to output data to .log file
+nstxout-compressed       = 1000   ; frequency to output compressed (.xtc) coordinates
+
+cutoff-scheme            = Verlet ; Verlet neighbor list
+verlet-buffer-tolerance  = 1e-4   ; Choose neighbor list cutoff/update to achieve this energy tolerance
+
+coulombtype              = PME    ; Use particle mesh Ewald
+rcoulomb                 = 1.2    ; Coulomb short range cutoff
+
+vdwtype                  = Cut-off  ; VDW type; by default uses potential shift
+rvdw                     = 1.2      ; VDW cutoff distance
+DispCorr                 = EnerPres ; Apply analytical dispersion corrections to energy/pressure
+

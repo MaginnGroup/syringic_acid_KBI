@@ -1,0 +1,38 @@
+ATOM      1  O1  PED     1       0.742  -1.389   0.322
+ATOM      2  O2  PED     1       2.958   0.141  -0.251
+ATOM      3  C1  PED     1      -0.759   0.492   0.185
+ATOM      4  C2  PED     1       0.587  -0.080  -0.251
+ATOM      5  C3  PED     1      -1.970  -0.300  -0.327
+ATOM      6  C4  PED     1       1.754   0.805   0.170
+ATOM      7  C5  PED     1      -3.306   0.316   0.105
+ATOM      8  H1  PED     1      -0.783   0.538   1.282
+ATOM      9  H2  PED     1      -0.824   1.526  -0.179
+ATOM     10  H3  PED     1       0.606  -0.170  -1.350
+ATOM     11  H4  PED     1      -1.928  -0.351  -1.424
+ATOM     12  H5  PED     1      -1.907  -1.333   0.035
+ATOM     13  H6  PED     1       1.751   0.932   1.260
+ATOM     14  H7  PED     1       1.671   1.790  -0.306
+ATOM     15  H8  PED     1      -3.410   1.341  -0.270
+ATOM     16  H9  PED     1      -4.152  -0.266  -0.274
+ATOM     17  H10 PED     1      -3.389   0.352   1.198
+ATOM     18  H11 PED     1       1.668  -1.641   0.182
+ATOM     19  H12 PED     1       3.713   0.528   0.210
+CONECT    1    4   18
+CONECT    2    6   19
+CONECT    3    4    5    8    9
+CONECT    4    1    3    6   10
+CONECT    5    3    7   11   12
+CONECT    6    2    4   13   14
+CONECT    7    5   15   16   17
+CONECT    8    3
+CONECT    9    3
+CONECT   10    4
+CONECT   11    5
+CONECT   12    5
+CONECT   13    6
+CONECT   14    6
+CONECT   15    7
+CONECT   16    7
+CONECT   17    7
+CONECT   18    1
+CONECT   19    2

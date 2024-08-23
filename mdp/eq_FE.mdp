@@ -1,0 +1,40 @@
+; April 11, 2024
+; Esteban Cea Klapp
+
+integrator               = sd
+dt                       = 0.001                ; 1 fs
+nsteps                   = 10000000             ; 10.0 ns
+
+nstenergy                = 5000                 ; frequency (n_steps) to output energies to .edr file
+nstlog                   = 10000                ; frequency (n_steps) to output data to .log file
+nstxout-compressed       = 100000               ; frequency to output compressed (.xtc) coordinates
+
+cutoff-scheme            = Verlet               ; Verlet neighbor list
+verlet-buffer-tolerance  = 1e-4                 ; Choose neighbor list cutoff/update to achieve this energy tolerance
+
+coulombtype              = PME                  ; Use particle mesh Ewald
+rcoulomb                 = 1.2                  ; Coulomb short range cutoff
+
+vdwtype                  = Cut-off              ; VDW type; by default uses potential shift
+rvdw                     = 1.2                  ; VDW cutoff distance
+DispCorr                 = EnerPres             ; Apply analytical dispersion corrections to energy/pressure
+
+tc-grps                  = System
+tau-t                    = 1.0
+ref-t                    = 303.2
+
+pcoupl                   = Parrinello-Rahman    ; Use Parrinello-Rahman pressure coupling 
+tau_p                    = 2.0                  ; time constant for pressure coupling (ps)
+compressibility          = 4.5e-5               ; compressibility of water (1/bar)
+ref_p                    = 1.0                  ; reference pressure, 1 bar
+
+pbc                     = xyz                   ; 3-D PBC
+
+constraints             = h-bonds               ; Apply hydrogen bond constraints
+constraint_algorithm    = lincs                 ; Use LINCS algorithm for constraints
+
+continuation            = yes                   ; continuation of a previous run
+ 
+
+
+ 

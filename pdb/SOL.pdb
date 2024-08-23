@@ -1,0 +1,9 @@
+TITLE      SOL     
+REMARK    THIS IS A SIMULATION BOX
+CRYST1    0.750    1.350    0.520  90.00  90.00  90.00 P 1           1
+MODEL        1
+ATOM      1 OW   SOL     1      -0.280  -0.050  -0.170  1.00  0.00            
+ATOM      2 HW1  SOL     1      -0.050   0.720   0.350  1.00  0.00            
+ATOM      3 HW2  SOL     1       0.470  -0.630  -0.100  1.00  0.00            
+TER
+ENDMDL
