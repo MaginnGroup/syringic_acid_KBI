@@ -29,11 +29,14 @@ gmx_mpi mdrun -v -deffnm min >> 01_run_min.log 2>&1
 printf "Equilibration NPT \n  "
 
 cp $HOME/mdp/eq.mdp eq.mdp
+gmx_mpi grompp -f eq.mdp -c min.gro  -p $TOPOL -o eq.tpr -maxwarn 10  >> 02_grompp_eq.log 2>&1 
 gmx_mpi mdrun -v -deffnm eq >> 02_run_eq.log 2>&1 
 
 
 ########################## PRODUCTION ########################## 
 printf "Production NPT \n  "
+
+cp $HOME/mdp/prd.mdp prd.mdp
 gmx_mpi grompp -f prd.mdp -t eq.cpt -c eq.gro -p $TOPOL -o prod.tpr  >> 03_grompp_eqB.log 2>&1 
 gmx_mpi mdrun -v -deffnm prod >> 03_run_eqB.log 2>&1 
 
