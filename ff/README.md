@@ -10,3 +10,5 @@
 ## Topology file (.top file)
 Example for syringic acid in the mixture water(1) + 1,2-pentanediol (2) (x1 = 0.8)
 Note
+## Gaussian input files 
+Those are the files used for the DFT optimization in vacuum and water (implicitly).
