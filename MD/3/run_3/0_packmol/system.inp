@@ -1,0 +1,19 @@
+tolerance 2.0
+filetype pdb
+output  system.pdb 
+
+structure SOL.pdb 
+  number 10000 
+  inside box 0. 0. 0. 80.160 80.160 80.160 
+end structure
+
+structure ETG.pdb 
+  number 2500 
+  inside box 0. 0. 0. 80.160 80.160 80.160 
+end structure
+
+structure SAC.pdb 
+  number 5 
+  inside box 0. 0. 0. 80.160 80.160 80.160 
+end structure
+

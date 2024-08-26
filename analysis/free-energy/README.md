@@ -1,0 +1,12 @@
+* Systems notation for free energy:
+- 1 : syringic acid in pure water
+- 2 : syringic acid in 10% 1,2-ethanediol
+- 9 : syringic acid in 10% 1,2-propanediol
+- 16 : syringic acid in 10% 1,2-butanediol
+- 17 : syringic acid in 20% 1,2-butanediol
+- 18 : syringic acid in 40% 1,2-butanediol
+- 19 : syringic acid in 60% 1,2-butanediol
+- 20 : syringic acid in 80% 1,2-butanediol
+- 22 : syringic acid in 100% 1,2-butanediol
+- 23 : syringic acid in 10% 1,2-petanediol
+- 31 : syringic acid in 10% 1,2-hexanediol

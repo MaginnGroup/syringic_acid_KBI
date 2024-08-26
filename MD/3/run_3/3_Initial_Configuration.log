@@ -1,0 +1,17 @@
+#############################################
+ ID:3 | water(1) + ethylene glycol (2) (x1 = 0.8)
+ T [K]:                               303.20
+ P [bar]:                               1.01
+#############################################
+ * Number of molecules
+   - water (SOL):                      10000
+   - 1,2-ethanediol (ETG):              2500
+   - syringic acid (SAC):                  5
+   - Total:                            12505
+ * Box initial dimensions 
+   - Lx [nm]:                        8.11599 
+   - Ly [nm]:                        8.11599 
+   - Lz [nm]:                        8.11599 
+ * Mass Density 
+   - rho [kg/m3]:                       1045 
+#############################################
