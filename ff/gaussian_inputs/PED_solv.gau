@@ -1,0 +1,40 @@
+--Link1--
+%mem=256MW
+%NProcShared=4
+%LindaWorker=localhost
+%chk=PED_solv.chk
+# b3lyp/6-31++g(d,p) opt=(calcfc,tight) int=ultrafine scrf=solvent=water
+# SCF=tight nosymm test
+
+
+0   1
+O    0.6802   -1.3889    0.2674
+O    2.9784    0.1662   -0.1798
+C   -0.7607    0.5354    0.1488
+C    0.5771   -0.0744   -0.2789
+C   -1.9524   -0.3199   -0.2913
+C    1.7504    0.7595    0.2292
+C   -3.2730    0.3220    0.1046
+H   -0.7884    0.6274    1.2422
+H   -0.8536    1.5455   -0.2680
+H    0.6253   -0.1719   -1.3695
+H   -1.9303   -0.4544   -1.3790
+H   -1.8952   -1.3163    0.1610
+H    1.7543    0.7974    1.3237
+H    1.7070    1.7788   -0.1670
+H   -3.3850    1.3072   -0.3592
+H   -4.1106   -0.3032   -0.2202
+H   -3.3403    0.4432    1.1905
+H    1.5428   -1.7488   -0.0011
+H    3.6942    0.7271    0.1648
+
+--Link1--
+%mem=256MW
+%NProcShared=4
+%LindaWorker=localhost
+%chk=PED_solv.chk
+# b3lyp/6-31++g(d,p) freq scrf=solvent=water
+# geom=allcheck guess=read
+# SCF=tight nosymm test
+# pop=MK iop(6/33=2,6/41=10,6/42=10,7/33=1)
+

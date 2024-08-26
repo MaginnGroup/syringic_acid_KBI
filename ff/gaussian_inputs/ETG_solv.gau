@@ -1,0 +1,31 @@
+--Link1--
+%mem=256MW
+%NProcShared=4
+%LindaWorker=localhost
+%chk=ETG_solv.chk
+# b3lyp/6-31++g(d,p) opt=(calcfc,tight) int=ultrafine scrf=solvent=water
+# SCF=tight nosymm test
+
+
+0   1
+C          0.95268        0.06538       -0.06021
+C          0.40506        0.25490       -1.46863
+O          0.87612       -0.79242       -2.31483
+O          2.37879        0.06869       -0.09214
+H          0.62692       -0.88958        0.36507
+H          0.61970        0.87572        0.59453
+H          0.73464        1.20775       -1.89568
+H         -0.68835        0.22949       -1.46314
+H          1.79553       -0.56350       -2.53931
+H          2.64238       -0.81121       -0.41524
+
+--Link1--
+%mem=256MW
+%NProcShared=4
+%LindaWorker=localhost
+%chk=ETG_solv.chk
+# b3lyp/6-31++g(d,p) freq scrf=solvent=water
+# geom=allcheck guess=read
+# SCF=tight nosymm test
+# pop=MK iop(6/33=2,6/41=10,6/42=10,7/33=1)
+

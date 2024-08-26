@@ -1,0 +1,37 @@
+--Link1--
+%mem=256MW
+%NProcShared=4
+%LindaWorker=localhost
+%chk=BD2_gas.chk
+# b3lyp/6-31++g(d,p) opt=(calcfc,tight) int=ultrafine
+# SCF=tight nosymm test
+
+
+0   1
+O    0.0162    1.3482    0.2382
+O    2.4354    0.0159   -0.2142
+C    0.0209    0.0134   -0.2675
+C   -1.2400   -0.7032    0.2195
+C    1.2812   -0.6925    0.2255
+C   -2.5137    0.0181   -0.2016
+H    0.0256    0.0817   -1.3613
+H   -1.2341   -0.7647    1.3147
+H   -1.2580   -1.7282   -0.1681
+H    1.3164   -0.7098    1.3196
+H    1.3386   -1.7210   -0.1441
+H   -2.5749    1.0170    0.2415
+H   -2.5640    0.1195   -1.2903
+H   -3.3917   -0.5471    0.1270
+H    0.8324    1.7786   -0.0690
+H    2.4163    0.0294   -1.1863
+
+--Link1--
+%mem=256MW
+%NProcShared=4
+%LindaWorker=localhost
+%chk=BD2_gas.chk
+# b3lyp/6-31++g(d,p) freq 
+# geom=allcheck guess=read
+# SCF=tight nosymm test
+# pop=MK iop(6/33=2,6/41=10,6/42=10,7/33=1)
+
